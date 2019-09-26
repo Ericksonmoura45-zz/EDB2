@@ -9,6 +9,18 @@ public class Node {
         this.value = value;
     }
 
+    public Node getLeft() {
+        return left;
+    }
+
+    public Node getRight() {
+        return right;
+    }
+
+    public int getValue() {
+        return value;
+    }
+
     public void insert(Node node) {
         if (node.value < this.value) {
             if (this.left == null) {

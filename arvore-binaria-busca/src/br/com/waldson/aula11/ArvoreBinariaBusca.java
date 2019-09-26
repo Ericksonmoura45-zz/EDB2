@@ -7,6 +7,10 @@ public class ArvoreBinariaBusca {
         return raiz == null;
     }
 
+    public Node getRoot() {
+        return raiz;
+    }
+
     public void insert(Node node) {
         if (raiz == null) {
             raiz = node;
