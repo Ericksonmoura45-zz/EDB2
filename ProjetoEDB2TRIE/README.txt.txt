@@ -4,6 +4,5 @@ Como compilar?
 
 Exemplo:
  
- java -jar TrieTree.jar palavras.txt am 2 
+ java -jar tree-trie.jar palavras.txt am  
 
-ps: Se puder considerar partes do código que não consegui fazer funcionar bem(autocomplete), agradeço de verdade, professor.
