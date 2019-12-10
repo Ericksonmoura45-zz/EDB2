@@ -1,25 +1,27 @@
-import java.util.*;
-import java.io.*;
-
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+// open e close vistos aqui: https://www.cs.colostate.edu/~cs160/.Spring15/programs/FileInputOutput.html
 public class Main {
+    public static void main(String[] args) {
+        Trie trie = new Trie();
 
-	public static void main(String[] args) {
-		
-		TrieTree trieTree = new TrieTree();
         try {
-            Scanner Test = new Scanner(new File(args[0]));
-            while (Test.hasNextLine()) {
-                trie.insert(Test.nextLine());
+            Scanner scanner = new Scanner(new File(args[0]));
+
+            while (scanner.hasNextLine()) {
+                trie.insert(scanner.nextLine());
             }
-            Test.close();
+
+            scanner.close();
+        } catch (FileNotFoundException ex) {
+            ex.printStackTrace();
         }
-        }
+
         if (args.length == 3) {
-            trie.autoComplete(args[1], Integer.parseInt(args[2]));
-        } 
-        else{
-            trie.autoComplete(args[1]);
+            trie.autocomplete(args[1], Integer.parseInt(args[2]));
+        } else {
+            trie.autocomplete(args[1]);
         }
     }
-
 }

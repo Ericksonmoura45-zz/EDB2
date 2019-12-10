@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/arvore-binaria-busca2.iml" filepath="$PROJECT_DIR$/arvore-binaria-busca2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ProjetoEDB2TRIE.iml" filepath="$PROJECT_DIR$/.idea/ProjetoEDB2TRIE.iml" />
     </modules>
   </component>
 </project>
